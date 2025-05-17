@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-дневный рацион питания</title>
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #ff9e80;
+            --bg: #f8f9fa;
+            --text: #333;
+            --border: #ddd;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+        
+        .day-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .meal {
+            margin-bottom: 25px;
+            border-bottom: 1px dashed var(--border);
+            padding-bottom: 15px;
+        }
+        
+        .meal:last-child {
+            border-bottom: none;
+        }
+        
+        .meal-title {
+            color: var(--secondary);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .meal-title:before {
+            content: "🍽️";
+            margin-right: 10px;
+        }
+        
+        .meal-items {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .meal-items tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        
+        .meal-items td {
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        
+        
+        .meal-total {
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #e3f2fd;
+    display: block; /* Изменено с inline-block на block */
+    box-sizing: border-box;
+}
+
+.day-total {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+        
+        
+            
+            .meal-items td:first-child {
+                padding-top: 12px;
+            }
+            
+            .meal-items td:last-child {
+                padding-bottom: 12px;
+                border-bottom: 1px solid var(--border);
+            }
+
+       .header-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Кнопка со стрелкой по центру */
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+    background-color: #3b5c85;
+}
+
+@media (max-width: 768px) {
+            .meal-items td 
+            {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+                .arrow-button {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+}
+
+            @media (min-width: 769px) {
+            .meal-items td 
+            {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+
+            .arrow-button 
+    {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;}
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header-with-button">
+    <h1>7-дневный рацион питания | 1 неделя</h1>
+    <a href="8.html" class="arrow-button">&gt;</a>
+</div>
+
+
+    
+<div class="day-container">
+    <h2>Понедельник</h2>
+
+    <div class="meal">
+        <h3 class="meal-title">Завтрак</h3>
+        <table class="meal-items">
+            <tr><td>🥣 Овсянка: 60 г сухой</td><td>0,3 BYN</td></tr>
+            <tr><td>🥛 Молоко: 200 мл</td><td>0,5 BYN</td></tr>
+            <tr><td>🍌 Банан: 100 г</td><td>0,5 BYN</td></tr>
+            <tr><td>🥜 Арахис: 10 г</td><td>0,2 BYN</td></tr>
+        </table>
+        <div class="meal-total">
+            Итого: 400 ккал | Б:17г | Ж:14г | У:55г
+        </div>
+    </div>
+
+    <div class="meal">
+        <h3 class="meal-title">Перекус</h3>
+        <table class="meal-items">
+            <tr><td>🧀 Творог: 100 г</td><td>1,1 BYN</td></tr>
+            <tr><td>🍞 Тост: 30 г</td><td>0,1 BYN</td></tr>
+            <tr><td>🍯 Мёд: 5 г</td><td>0,1 BYN</td></tr>
+        </table>
+        <div class="meal-total">
+            Итого: 250 ккал | Б:17г | Ж:7г | У:20г
+        </div>
+    </div>
+
+    <div class="meal">
+        <h3 class="meal-title">Обед</h3>
+        <table class="meal-items">
+            <tr><td>🍚 Рис: 60 г сухой</td><td>0,25 BYN</td></tr>
+            <tr><td>🍗 Курица: 80 г</td><td>1,0 BYN</td></tr>
+            <tr><td>🥬 Капуста тушёная: 150 г</td><td>0,25 BYN</td></tr>
+            <tr><td>🫒 Масло: 5 г</td><td>0,1 BYN</td></tr>
+        </table>
+        <div class="meal-total">
+            Итого: 400 ккал | Б:30г | Ж:12г | У:35г
+        </div>
+    </div>
+
+    <div class="meal">
+        <h3 class="meal-title">Перекус</h3>
+        <table class="meal-items">
+            <tr><td>🥚 Яйцо: 1 шт</td><td>0,4 BYN</td></tr>
+            <tr><td>🍏 Яблоко: 100 г</td><td>0,2 BYN</td></tr>
+        </table>
+        <div class="meal-total">
+            Итого: 150 ккал | Б:7г | Ж:6г | У:13г
+        </div>
+    </div>
+
+    <div class="meal">
+        <h3 class="meal-title">Ужин</h3>
+        <table class="meal-items">
+            <tr><td>🍝 Макароны: 70 г сухих</td><td>0,25 BYN</td></tr>
+            <tr><td>🥓 Ветчина: 60 г</td><td>1,15 BYN</td></tr>
+            <tr><td>🧀 Сыр "Экспонента": 20 г</td><td>0,4 BYN</td></tr>
+        </table>
+        <div class="meal-total">
+            Итого: 380 ккал | Б:26г | Ж:16г | У:32г
+        </div>
+    </div>
+
+    <div class="meal">
+        <h3 class="meal-title">На ночь</h3>
+        <table class="meal-items">
+            <tr><td>🧀 Творог: 100 г</td><td>1,1 BYN</td></tr>
+            <tr><td>🥛 Молоко: 150 мл</td><td>0,4 BYN</td></tr>
+        </table>
+        <div class="meal-total">
+            Итого: 180 ккал | Б:15г | Ж:6г | У:8г
+        </div>
+    </div>
+
+    <div class="day-total">
+        <strong>Итого за день:</strong> Б:112г | Ж:61г | У:163г | Калории: 1760 ккал | Стоимость: ~7.4 BYN
+    </div>
+</div>
+
+    
+
+</body>
+</html>
